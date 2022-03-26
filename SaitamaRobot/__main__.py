@@ -72,16 +72,16 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-❂ ɪ ᴀᴍ ɴᴏʙᴀʀᴀ ᴀ ᴊᴜᴊᴜᴛꜱᴜ ᴡɪᴢᴀʀᴅ ꜱᴏʀᴄᴇʀᴇʀ ❂
+❂ ɪ ᴀᴍ sʜɪᴋɪᴍᴏʀɪ ᴡʜᴏ's ɴᴏᴛ ᴊᴜsᴛ ᴀ ᴄᴜᴛɪᴇ ❂
 --------------------------------------
 𝘼 𝙛𝙡𝙚𝙭𝙞𝙗𝙡𝙚 𝙖𝙣𝙙 𝙈𝙪𝙡𝙩𝙞 𝙁𝙚𝙖𝙩𝙪𝙧𝙚𝙙 𝙂𝙧𝙤𝙪𝙥 𝙈𝙖𝙣𝙖𝙜𝙚𝙢𝙚𝙣𝙩 𝘽𝙤𝙩
 --------------------------------------
 ᴄʟɪᴄᴋ ᴏɴ /HELP ᴛᴏ ᴋɴᴏᴡ ᴍʏ ꜱᴋɪʟʟꜱ...
-ᴘᴏᴡᴇʀᴇᴅ ʙʏ @AogiriNetwork[.](https://telegra.ph/file/1f054a1f6e857f6c4428d.jpg)
+ᴘᴏᴡᴇʀᴇᴅ ʙʏ @AogiriNetwork[.](https://telegra.ph/file/ff7deac4e96730c24d78c.mp4)
 """
 
 HELP_STRINGS = """
-ʜᴇʏ ᴛʜᴇʀᴇ, ɪ'ᴍ ɴᴏʙᴀʀᴀ ᴋᴜɢɪꜱᴀᴋɪ!
+ʜᴇʏ ᴛʜᴇʀᴇ, ɪ'ᴍ sʜɪᴋɪᴍᴏʀɪ!
 ᴛᴏ ᴍᴀᴋᴇ ᴍᴇ ꜰᴜɴᴄᴛɪᴏɴᴀʟ, ᴍᴀᴋᴇ ꜱᴜʀᴇ ᴛʜᴀᴛ ɪ ʜᴀᴠᴇ ᴇɴᴏᴜɢʜ ʀɪɢʜᴛꜱ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ.
 
 ʜᴇʟᴘꜰᴜʟ ᴄᴏᴍᴍᴀɴᴅꜱ:
@@ -147,7 +147,7 @@ for module_name in ALL_MODULES:
     if hasattr(imported_module, "__user_settings__"):
         USER_SETTINGS[imported_module.__mod_name__.lower()] = imported_module
 
-CHA_VID = "https://telegra.ph/file/3d0fcf49b413aa039ade3.mp4"
+CHA_VID = "https://telegra.ph/file/31d9b5a0baab9afb728da.mp4"
 
 # do not async
 def send_help(chat_id, text, keyboard=None):
@@ -231,22 +231,22 @@ def start(update: Update, context: CallbackContext):
                             ),
                             InlineKeyboardButton(
                                 text="🚦 ᴜᴘᴅᴀᴛᴇs 🚦",
-                                url="https://t.me/NobaraBotUpdates",
+                                url="https://t.me/ShikimoriUpdates",
                             ),
                         ],
                         [
                             InlineKeyboardButton(
-                                text=" ᴡɪᴢᴀʀᴅ ",
+                                text=" ᴅɪsᴀsᴛᴇʀs ",
                                 url="https://t.me/NobaraBotUpdates/5",
                             ),
                             InlineKeyboardButton(
                                 text="ɢʀᴏᴜᴘ",
-                                url="https://t.me/AnimeChatAura/",
+                                url="https://t.me/AnimeChatfolks",
                             ),
                         ],
                         [
                             InlineKeyboardButton(
-                                text="⚓️ ʜᴇʟᴘ ⚓️",
+                                text="ʜᴇʟᴘ",
                                 url="https://t.me/Nobara_superbot?start=help",
                             ),
                         ],
@@ -256,7 +256,7 @@ def start(update: Update, context: CallbackContext):
     else:
         first_name = update.effective_user.first_name
         update.effective_message.reply_video(
-            CHA_VID, caption="I am Here For Protecting You from Curses {}".format(
+            CHA_VID, caption="Shikimori Is here Already {}".format(
                 escape_markdown(first_name), escape_markdown(uptime)
             ),
             parse_mode=ParseMode.MARKDOWN,
@@ -265,11 +265,11 @@ def start(update: Update, context: CallbackContext):
                 [
                     [
                         InlineKeyboardButton(
-                            text="ᴊᴜᴊᴜᴛꜱᴜ ʙᴀꜱᴇ", url="https://t.me/Nobarasupport")
+                            text="ᴄᴜᴛɪᴇ's ʙᴀsᴇ", url="https://t.me/Nobarasupport")
                     ],
                     [
                         InlineKeyboardButton(
-                            text="Aɴɪᴍᴇ Cʜᴀᴛ", url="t.me/animechataura"),
+                            text="Aɴɪᴍᴇ Cʜᴀᴛ", url="t.me/animechatfolks"),
                         InlineKeyboardButton(
                             text="ᴀᴏɢɪʀɪ ᴜɴɪᴏɴ", url="t.me/aogirinetwork")
                     ]
@@ -648,7 +648,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "[I am now Alive!](https://telegra.ph/file/b4be86f0b493954bfa5aa.mp4)", parse_mode=ParseMode.MARKDOWN)
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "[I am now Alive!](https://telegra.ph/file/31d9b5a0baab9afb728da.mp4)", parse_mode=ParseMode.MARKDOWN)
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!",
