@@ -98,7 +98,7 @@ HELP_STRINGS = """
     "" if not ALLOW_EXCL else "📝All commands can either be used with / or !.",
 )
 
-EREN_IMG = "https://telegra.ph/file/8ab770904946c033f114e.jpg"
+EREN_IMG = "https://telegra.ph/file/ff7deac4e96730c24d78c.mp4"
 
 
 
