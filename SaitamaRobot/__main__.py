@@ -247,7 +247,7 @@ def start(update: Update, context: CallbackContext):
                         [
                             InlineKeyboardButton(
                                 text="ʜᴇʟᴘ",
-                                url="https://t.me/Nobara_superbot?start=help",
+                                url="https://t.me/ShikimoriSuperbot?start=help",
                             ),
                         ],
                     ],
