@@ -292,7 +292,7 @@ FAFNIRS = list(FAFNIRS)
 
 
 # Load at end to ensure all prev variables have been set
-from MarinRobot.modules.helper_funcs.handlers import (
+from SaitamaRobot.modules.helper_funcs.handlers import (
     CustomCommandHandler,
     CustomMessageHandler,
     CustomRegexHandler,
