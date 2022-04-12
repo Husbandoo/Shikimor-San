@@ -63,3 +63,4 @@ bing_image_downloader
 googletrans
 tracemoepy
 img2pdf
+odmantic
